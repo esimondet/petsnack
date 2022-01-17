@@ -11,7 +11,6 @@
 ## Table of Contents
 
 - [Usage](#usage)
-- [Tests](#tests)
 - [Resources](#resources)
 - [Questions](#questions)
 
@@ -19,7 +18,7 @@
 
   <p></p>
   
-  ![Full page screenshot of the Password Generator](public/assets/images/full-page-screenshot.png)
+  ![Full page screenshot](public/assets/images/full-page-screenshot.png)
 
 ## Resources
 
