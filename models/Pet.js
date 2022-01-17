@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 // create our Pet model
 class Pet extends Model {}
 
-// create fields/columns for Post model
+// create fields/columns for Pet model
 Pet.init(
   {
     id: {
@@ -44,7 +44,7 @@ Pet.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: 'pet',
   }
 );
 
