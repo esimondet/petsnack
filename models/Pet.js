@@ -16,6 +16,9 @@ Pet.init(
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        len: [1, 30],
+      },
     },
     // image: {
     //this is where the pet image upload using AWS may go
@@ -29,7 +32,7 @@ Pet.init(
       allowNull: false,
     },
     weight: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {

@@ -11,3 +11,11 @@ Pet.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL',
 });
+
+module.exports = {
+  User,
+  Pet,
+  // Post,
+  // Comment,
+  // Vote,
+};
