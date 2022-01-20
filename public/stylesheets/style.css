@@ -1,0 +1,64 @@
+:root {
+    /* --primary-color: DARKMODE CHARCOL;
+    --secondary-color: BOX/ ELEMENT COLOR; */
+    --tertiary-color: (114, 216, 242);
+
+*{
+    box sizing: border-box;
+}
+    body {
+        font-family: sans;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: flex-start;
+        background-color: var(--quatrianry);
+    }
+    a {
+        color: var (--dark);
+        text-decoration: none;
+
+    }
+    /* a: vistied (
+        color: inherit; */
+}
+
+    header {
+        padding: 40px;
+        text-aling: center;
+        background: var(--primary);
+        color: var(--dark);
+
+    } 
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+    }
+    aside {
+        flex: o;
+        background-color: var(--tertiary);
+        padding: 80px;
+        text-aling: left;
+        color: var(--light);
+
+    }
+    nav {
+        display: flex;
+        background-color: var(--dark);
+
+    }
+
+    nav a {
+        color: var(--medium);
+        padding: 14px 20px;
+        text-decoration: none;
+        tex-aling: center;
+
+    }
+    nav a:hover {
+        color: var(--secondary);
+        
+    }

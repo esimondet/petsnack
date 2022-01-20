@@ -1,0 +1,31 @@
+<section>
+  <h2>Creat New Post</h2>
+
+  <form class="new-pet-form">
+    <div>
+      <label for="pet-name">Name</label>
+      <input type="text" id="pet-name" name="pet-name" />
+    </div>
+    <div>
+      <label for="pet-url">Link</label>
+      <input id="pet-url" name="pet-url" />
+    </div>
+    <buttton type="submit" class="btn">Create</buttton>
+  </form>
+</section>
+
+{{#if pets.lenth}}
+<section>
+    <h2>Your Pets</h2>
+    <ol>
+        {{#each pets as |post|}}
+        <li>
+            {{>pets-info post}}
+            <a href="/dshboard/edit{{pets.id}}" class="edit-link">Edit pets</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-pets.js"></script>
