@@ -1,14 +1,14 @@
 :root {
-    --primary: #4d4545;
-    --secondary: #5c636d;
-    --tertiary: #37ebe5;
+    --primary: #474343;
+    --secondary: #444950;
+    --tertiary: #9ae1e4d8;
     --quatrinary: #6c6b67;
     --light: #e3e4e3;
-    --dark: #182c23;
+    --dark: #1c2c25;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
   }
-  
+
   body {
       font-family: 'Luxurious Roman', cursive;
       margin: 0;
@@ -16,7 +16,7 @@
       flex-direction: column;
       min-height: 100vh;
       justify-content: flex-start;
-      bacground-color: var(--secondary);   
+      background-color: var(--secondary);   
   }
   a {
       color: var(--dark);
@@ -25,12 +25,13 @@
   a:visited {
       color: inherit;
   }
+
   header {
-      padding 30px;
+      padding: 45px;
       text-align: center;
-      backround: var(--secondary);
+      background: var(--primary);
       font-family: 'Love Light', cursive;
-      color: var(--tertirary);
+      color: #9ae1e4d8;
   }
   main {
       display: flex;
@@ -49,7 +50,7 @@
       background-color: var(--secondary);
   }
   
-  nav a{
+  nav a {
       color: var(--light);
       padding: 15px 20px;
       text-decoration: none;
@@ -74,7 +75,7 @@
       border: none;
       padding: 0;
       cursor: pointers;
-      text-dectoration: none;
+      text-decoration: none;
       font-size: 100%;
       transition: color 0.1s;
       margin-left: 16px;
@@ -82,10 +83,10 @@
 
   img {
       max-width: 100%;
-      height: auto:
+      height: auto;
   }
 
-//* cards*/
+/* cards*/
 .card {
     margin: 20px;
     flex: o 1 300px;
@@ -129,5 +130,15 @@
     flex-flow: column wrap;
     align-content: flex-start;
     align-items: center;
+  }
+
+  /*foote =*/
+footer {
+    background-color: #5c6366;
+    font-family: 'Love Light', cursive;
+    margin: 0;
+    color: #2ae0da;
+
+
   }
   
