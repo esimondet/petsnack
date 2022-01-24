@@ -1,7 +1,13 @@
 <ol class="pet-list">
-
-<p> This website is only for fun, we are not Veteraians!!!</p>
-
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+</li>
+<p> This website is only for fun, we are not Veteinarians!!!
+Fun only no Verterniarians are giving advice...
+Please see your Real vet for real advice...
+</p>
+  {{/each}}
 </ol>
 
 <div class="uploads">
