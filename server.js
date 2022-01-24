@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const generateUploudUrl = require('./controllers/javascript/s3');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -18,6 +19,11 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/s3Url', async function (req, res, next) {
+  const url = await generateUploudUrl();
+  res.send({ url });
+});
 
 app.use(require('./controllers/'));
 
