@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
+    <link hre="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/stylesheets/style.css">
     {{!-- {{/each}} --}}
   </head>
 
 
-        {{{body}}}
+    <body   
     <div class="wrapper">
       <header>
         <h1>
@@ -23,7 +23,7 @@
         </h1>
         <nav>
           {{#if loggedIn}}
-            <a href="/homepage">homepage</a>
+            <a href="/dashboard"></a>
             <button id="logout" class="btn-no-style">logout</button>
           {{else}}
             <a href="/login">login</a>
@@ -31,12 +31,22 @@
         </nav>
       </header>
       <main>
+        <aside>
+          <p>This website is only for experience only, we are not veterinarians!
+              Please see your real vet for real advice...
+              </p>
+        </aside>
+      {{{body}}}
+          
       </main>
       <footer>
         <span class="material-icons-two-tone">
          pets
        </span>
         Thanks for visiting Petsnack!
+        <span class="material-icons-two-tone">
+         pets
+       </span>
       </footer>
     </div>
 
@@ -44,4 +54,4 @@
       <script src="/javascript/logout.js"></script>
     {{/if}}
   </body>
-</html>   
+</html>
