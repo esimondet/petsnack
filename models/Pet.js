@@ -15,14 +15,18 @@ Pet.init(
     },
     pet_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1, 30],
       },
     },
-    // image: {
-    //this is where the pet image upload using AWS may go
-    // },
+    pet_image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        isUrl: true,
+      },
+    },
     species: {
       type: DataTypes.STRING,
       allowNull: false,
