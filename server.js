@@ -20,13 +20,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/s3Url', async function (req, res, next) {
-  const url = await generateUploudUrl();
-  res.send({ url });
+app.get('/s3Url', async function(req, res, next) {
+    const url = await generateUploudUrl();
+    res.send({ url });
 });
 
 app.use(require('./controllers/'));
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+    app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
