@@ -19,10 +19,12 @@ body {
   font-family: "Roboto", san-serif;
   color: var(--light);
 }
+
 a {
   color: var(--dark);
   text-decoration: none;
 }
+
 a:visited {
   color: inherit;
 }
@@ -35,6 +37,7 @@ header {
   font-size: 64px;
   color: #9ae1e4d8;
 }
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -42,13 +45,16 @@ main {
   font-family: "Roboto", sans-serif;
   color: white;
 }
+
 aside {
   flex: 0;
   background-color: var(--primary);
   padding: 80px;
   text-align: left;
-  color: var(--light);
+  color: white;
+  font-size: 35px;
 }
+
 nav {
   display: flex;
   background-color: var(--secondary);
@@ -68,6 +74,7 @@ nav a:hover {
   color: var(--secondary);
   background-color: var(--dark);
 }
+
 .gallery {
   flex: 4;
   background-color: #6c6b67;
@@ -77,6 +84,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .btn-no-style {
   background: none;
   border: none;
@@ -94,6 +102,7 @@ img {
 }
 
 /* cards*/
+
 .card {
   margin: 20px;
   flex: o 1 300px;
@@ -102,6 +111,7 @@ img {
   background-color: var(--dark);
   color: var(--light);
 }
+
 .login-card {
   margin: 0 0 20px 0;
   flex: 0 0 50%;

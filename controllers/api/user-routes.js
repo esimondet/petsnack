@@ -17,28 +17,26 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     User.findOne({
         attributes: {
-            exclude: ['password']
+            exclude: ['password'],
         },
         where: {
-            id: req.params.id
+            id: req.params.id,
         },
-
 
         include: [
             {
                 model: Pet,
-
             },
-        ]
+        ],
     })
-        .then(dbUserData => {
+        .then((dbUserData) => {
             if (!dbUserData) {
                 res.status(404).json({ message: 'No user found with this id' });
                 return;
             }
             res.json(dbUserData);
         })
-        .catch(err => {
+        .catch((err) => {
             console.log(err);
             res.status(500).json(err);
         });
@@ -60,7 +58,7 @@ router.post('/', (req, res) => {
                 res.json(dbUserData);
             });
         })
-        .catch(err => {
+        .catch((err) => {
             console.log(err);
             res.status(500).json(err);
         });
@@ -101,17 +99,17 @@ router.put('/:id', (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: {
-            id: req.params.id
-        }
+            id: req.params.id,
+        },
     })
-        .then(dbUserData => {
+        .then((dbUserData) => {
             if (!dbUserData) {
                 res.status(404).json({ message: 'No user found with this id' });
                 return;
             }
             res.json(dbUserData);
         })
-        .catch(err => {
+        .catch((err) => {
             console.log(err);
             res.status(500).json(err);
         });
@@ -120,17 +118,17 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     User.destroy({
         where: {
-            id: req.params.id
-        }
+            id: req.params.id,
+        },
     })
-        .then(dbUserData => {
+        .then((dbUserData) => {
             if (!dbUserData) {
                 res.status(404).json({ message: 'No user found with this id' });
                 return;
             }
             res.json(dbUserData);
         })
-        .catch(err => {
+        .catch((err) => {
             console.log(err);
             res.status(500).json(err);
         });
