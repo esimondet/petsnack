@@ -55,12 +55,14 @@ router.get('/', (req, res) => {
 
 
 router.get('/login', (req, res) => {
-  if (req.body.loggedIn) {
-    res.redirect('/');
-    return;
-  }
+  res.render('login');
+
 
   //   res.render('login');
 });
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard');
+})
 
 module.exports = router;
