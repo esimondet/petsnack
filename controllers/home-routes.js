@@ -62,7 +62,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/dashboard', (req, res) => {
-  res.render('dashboard');
+  res.render('post');
 })
 
 module.exports = router;
