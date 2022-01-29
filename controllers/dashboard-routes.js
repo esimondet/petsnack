@@ -5,11 +5,11 @@ const { Post, User, Comment, Vote, Pet } = require('../models');
 
 // get all posts for dashboard
 router.get('/', (req, res) => {
-    console.log(req.session);
+    console.log(req.body);
     console.log('');
     Post.findAll({
         where: {
-            user_id: req.session.user_id
+            user_id: req.body.user_id
         },
         attributes: [
             'id',
@@ -32,7 +32,7 @@ router.get('/', (req, res) => {
                 attributes: ['username']
             },
             {
-                model: Pet
+                // model: Pet
             }
         ]
     })
@@ -70,7 +70,7 @@ router.get('/edit/:id', (req, res) => {
                 attributes: ['username']
             },
             {
-                model: Pet
+                // model: Pet
             }
         ]
     })
