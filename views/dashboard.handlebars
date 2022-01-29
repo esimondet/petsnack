@@ -1,31 +1,39 @@
 <section>
-  <h2>Creat New Post</h2>
-
+  <nav> 
+   <button id="logout" class="btn-no-style">logout</button>
+   <h3> Dashboard </h3>
+  </nav>
+  <h2>Create New Post</h2>
+<aside>
+  {{vote}}
+</aside>
+  
+  
   <form class="new-pet-form">
     <div>
-      <label for="pet-name">Name</label>
-      <input type="text" id="pet-name" name="pet-name" />
+      <label for="pet-title">Title</label>
+      <input type="text" id="pet-title" name="pet-title" />
     </div>
     <div>
       <label for="pet-url">Link</label>
       <input id="pet-url" name="pet-url" />
     </div>
-    <buttton type="submit" class="btn">Create</buttton>
+    <button type="submit" class="btn">Create</button>
   </form>
 </section>
+<div>
+  
+</div>
 
-{{#if pets.lenth}}
+{{#if posts.length}}
 <section>
-    <h2>Your Pets</h2>
-    <ol>
-        {{#each pets as |post|}}
-        <li>
-            {{>pets-info post}}
-            <a href="/dashboard/edit{{pets.id}}" class="edit-link">Edit pets</a>
-        </li>
-        {{/each}}
-    </ol>
+  <h2>Your Pets</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> pet-info post}}
+      <a href="/dashboard/edit/{{pet.id}}" class="edit-link">Edit pets</a>
+    </li>
+    {{/each}}
+  </ol>
 </section>
-{{/if}}
-
-<script src="/javascript/add-pets.js"></script>

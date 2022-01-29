@@ -1,36 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petsnack</title>
-    {{!-- {{#each css}} --}}
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link hre="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/stylesheets/style.css">
-    {{!-- {{/each}} --}}
+    
   </head>
 
 
-    <body   
+    <body>
+    
     <div class="wrapper">
       <header>
-        <h1>
-          <a href="/">Petsnack</a>
-        </h1>
-        <nav>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
           {{#if loggedIn}}
-            <a href="/dashboard"></a>
+            <a href="/homepage"></a>
+            
             <button id="logout" class="btn-no-style">logout</button>
           {{else}}
             <a href="/login">login</a>
           {{/if}}
-          <a href="/dashboard">Dashboard</a>
+
       
         </nav>
+        <h1>
+          <a href="/">Petsnack</a>
+        </h1>
       </header>
       <main>
         <aside>
@@ -42,13 +46,10 @@
       
       </main>
       <footer>
-        {{!-- <span class="material-icons-two-tone">
-         pets
-       </span> --}}
-        Thanks for visiting Petsnack!
-        {{!-- <span class="material-icons-two-tone">
-         pets
-       </span> --}}
+              &copy of Petsnack  2022 
+                Thanks for visiting Petsnack!
+                
+        
       </footer>
     </div>
 
@@ -59,6 +60,6 @@
 
 
 
-    <script src="/javascript/image.js"></script>
+    <script src="/javascript/s3.js"></script>
   </body>
 </html>
