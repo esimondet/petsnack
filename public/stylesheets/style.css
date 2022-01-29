@@ -1,4 +1,15 @@
 :root {
+<<<<<<< HEAD
+    --primary: #474343;
+    --secondary: #444950;
+    --tertiary: #36bbc0;
+    --quatrinary: #6c6b67;
+    --light: #e3e4e3;
+    --dark: #1c2c25;
+    --fifth: #738686d8;
+    --error: rgb(228, 46, 1);
+    --border-radius: 0.3rem;
+=======
   --primary: #474343;
   --secondary: #444950;
   --tertiary: #36bbc0;
@@ -7,6 +18,7 @@
   --dark: #1c2c25;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
+>>>>>>> main
 }
 
 body {
@@ -30,12 +42,21 @@ a:visited {
 }
 
 header {
+<<<<<<< HEAD
+    padding: 45px;
+    text-align: center;
+    background: var(--primary);
+    font-family: 'Love Light', cursive;
+    font-size: 64px;
+    color: var(--tertiary);
+=======
   padding: 45px;
   text-align: center;
   background: var(--primary);
   font-family: "Love Light", cursive;
   font-size: 64px;
   color: #9ae1e4d8;
+>>>>>>> main
 }
 
 main {
@@ -104,68 +125,89 @@ img {
 /* cards*/
 
 .card {
-  margin: 20px;
-  flex: o 1 300px;
-  border: 7px double var(--dark);
-  border-radius: 10px;
-  background-color: var(--dark);
-  color: var(--light);
+    margin: 20px;
+    flex: o 1 300px;
+    border: 7px double var(--dark);
+    border-radius: 10px;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 .login-card {
-  margin: 0 0 20px 0;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  border-style: double;
-  border-width: thick;
-  background-color: #5c6366;
-  color: var(--light);
+    margin: 0 0 20px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    background-color: #5c6366;
+    color: var(--light);
 }
 
 .card header {
-  color: var(--light);
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  background-color: var(--tertiary);
-  padding: 0.625rem;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+    color: var(--light);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: var(--dark);
+    padding: 0.625rem;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
 .card-body {
-  font-size: 1.4rem;
-  text-align: center;
-  font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
 }
+
 
 /* LAYOUT */
+
 .container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
 }
 
+
 /*foote =*/
+
 footer {
+<<<<<<< HEAD
+    background-color: #484f52;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #2ae0da;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+=======
   background-color: #484f52;
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: #2ae0da;
   font-size: 15px;
 }
+>>>>>>> main
 /* image upload styling*/
+
 form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    background-color: #474343;
 }
 
-form > * {
-  margin: 5px 0;
-  box-sizing: border-box;
+form>* {
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: var(--fifth);
+    color: #474343;
+    text-align: center;
 }
