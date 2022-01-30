@@ -1,15 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --primary: #474343;
-    --secondary: #444950;
-    --tertiary: #36bbc0;
-    --quatrinary: #6c6b67;
-    --light: #e3e4e3;
-    --dark: #1c2c25;
-    --fifth: #738686d8;
-    --error: rgb(228, 46, 1);
-    --border-radius: 0.3rem;
-=======
   --primary: #474343;
   --secondary: #444950;
   --tertiary: #36bbc0;
@@ -18,7 +7,6 @@
   --dark: #1c2c25;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
->>>>>>> main
 }
 
 body {
@@ -42,21 +30,12 @@ a:visited {
 }
 
 header {
-<<<<<<< HEAD
-    padding: 45px;
-    text-align: center;
-    background: var(--primary);
-    font-family: 'Love Light', cursive;
-    font-size: 64px;
-    color: var(--tertiary);
-=======
   padding: 45px;
   text-align: center;
   background: var(--primary);
   font-family: "Love Light", cursive;
   font-size: 64px;
   color: #9ae1e4d8;
->>>>>>> main
 }
 
 main {
@@ -176,24 +155,12 @@ img {
 /*foote =*/
 
 footer {
-<<<<<<< HEAD
-    background-color: #484f52;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    color: #2ae0da;
-    font-size: 15px;
-    text-align: center;
-}
-
-
-=======
   background-color: #484f52;
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: #2ae0da;
   font-size: 15px;
 }
->>>>>>> main
 /* image upload styling*/
 
 form {
