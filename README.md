@@ -48,7 +48,7 @@ Please direct questions to our [github](https://github.com/esimondet/petsnack).
  ## Contributors 
   ![Krista Meyer @ https://github.com/Fens05]
   ![Edison S @ https://github.com/esimondet]
-  ![Adam G @ .  ]
+  ![Adam G @ https://github.com/adamcg123]
 
 
 
