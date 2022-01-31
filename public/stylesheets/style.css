@@ -1,105 +1,114 @@
 :root {
-  --primary: #474343;
-  --secondary: #444950;
-  --tertiary: #36bbc0;
-  --quatrinary: #6c6b67;
-  --light: #e3e4e3;
-  --dark: #1c2c25;
-  --error: rgb(228, 46, 1);
-  --border-radius: 0.3rem;
+    --primary: #474343;
+    --secondary: #444950;
+    --tertiary: #36bbc0;
+    --quatrinary: #6c6b67;
+    --light: #e3e4e3;
+    --dark: #1c2c25;
+    --fifth: #738686d8;
+    --error: rgb(228, 46, 1);
+    --border-radius: 0.3rem;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-  background-color: var(--secondary);
-  font-family: "Roboto", san-serif;
-  color: var(--light);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--secondary);
+    font-family: "Roboto", san-serif;
+    color: var(--light);
 }
 
 a {
-  color: var(--dark);
-  text-decoration: none;
+    color: var(--dark);
+    text-decoration: none;
 }
 
 a:visited {
-  color: inherit;
+    color: inherit;
 }
 
 header {
-  padding: 45px;
-  text-align: center;
-  background: var(--primary);
-  font-family: "Love Light", cursive;
-  font-size: 64px;
-  color: #9ae1e4d8;
+    padding: 45px;
+    text-align: center;
+    background: var(--primary);
+    font-family: 'Love Light', cursive;
+    font-size: 64px;
+    color: var(--tertiary);
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  font-family: "Roboto", sans-serif;
-  color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 aside {
-  flex: 0;
-  background-color: var(--primary);
-  padding: 80px;
-  text-align: left;
-  color: white;
-  font-size: 35px;
+    flex: 0;
+    background-color: var(--primary);
+    padding: 80px;
+    text-align: left;
+    color: white;
+    font-size: 35px;
 }
 
 nav {
-  display: flex;
-  background-color: var(--secondary);
-  font-family: "Roboto", sans-serif;
-  color: white;
-  font-size: 24px;
+    display: flex;
+    background-color: var(--primary);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
 }
 
-nav a {
-  color: var(--light);
-  padding: 15px 20px;
-  text-decoration: none;
-  text-align: center;
+.navbar {
+    background-color: var(--secondary);
+    height: 40px;
+    padding: 20px;
+    text-align: left;
+}
+
+cc nav a {
+    color: var(--light);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+    color: var(--secondary);
+    background-color: var(--dark);
 }
 
 .gallery {
-  flex: 4;
-  background-color: #6c6b67;
-  padding: 550px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+    flex: 4;
+    background-color: #6c6b67;
+    padding: 550px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointers;
-  text-decoration: none;
-  font-size: 100%;
-  transition: color 0.1s;
-  margin-left: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointers;
+    text-decoration: none;
+    font-size: 100%;
+    transition: color 0.1s;
+    margin-left: 16px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
 
 /* cards*/
 
@@ -155,12 +164,15 @@ img {
 /*foote =*/
 
 footer {
-  background-color: #484f52;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  color: #2ae0da;
-  font-size: 15px;
+    background-color: #484f52;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #2ae0da;
+    font-size: 15px;
+    text-align: center;
 }
+
+
 /* image upload styling*/
 
 form {
